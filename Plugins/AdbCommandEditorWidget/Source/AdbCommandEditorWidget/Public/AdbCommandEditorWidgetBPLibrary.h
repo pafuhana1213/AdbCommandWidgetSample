@@ -40,7 +40,7 @@ public:
 /* UAsyncActionExecuteAdbCommand
  *****************************************************************************/
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(FAsyncExecuteAdbCommandCompleted, FString, StdOut, FString, StdErr, int32, ErrorCode, bool, bResult);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_FiveParams(FAsyncExecuteAdbCommandCompleted, FString, CommandLine, FString, StdOut, FString, StdErr, int32, ErrorCode, bool, bResult);
 
 class FAsyncExecuteAdbCommandTask : public FNonAbandonableTask
 {
@@ -59,7 +59,7 @@ public:
 		int32 OutErrorCode = 0;
 		bool Result = UAdbCommandEditorWidgetBPLibrary::ExecuteAdbCommand(CommandLine, OutStdOut, OutStdErr, OutErrorCode);
 
-		Completed.Broadcast(OutStdOut, OutStdErr, OutErrorCode, Result);
+		Completed.Broadcast(CommandLine, OutStdOut, OutStdErr, OutErrorCode, Result);
 	}
 
 	FORCEINLINE TStatId GetStatId() const
@@ -100,7 +100,7 @@ public:
 	virtual void Activate() override;
 
 	UFUNCTION()
-	void Finish(FString StdOut, FString StdErr, int32 ErrorCode, bool bResult);
+	void Finish(FString CommandLine, FString StdOut, FString StdErr, int32 ErrorCode, bool bResult);
 
 private:
 	FAsyncTask<FAsyncExecuteAdbCommandTask>* AsyncExecuteAdbCommandTask;

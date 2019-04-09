@@ -110,11 +110,11 @@ void UAsyncActionExecuteAdbCommand::Activate()
 	AsyncExecuteAdbCommandTask->StartBackgroundTask();
 }
 
-void UAsyncActionExecuteAdbCommand::Finish( FString StdOut, FString StdErr, int32 ErrorCode, bool bResult)
+void UAsyncActionExecuteAdbCommand::Finish(FString CommandLine, FString StdOut, FString StdErr, int32 ErrorCode, bool bResult)
 {
-	AsyncTask(ENamedThreads::GameThread, [this, StdOut, StdErr, ErrorCode, bResult]()
+	AsyncTask(ENamedThreads::GameThread, [this, CommandLine, StdOut, StdErr, ErrorCode, bResult]()
 	{
-		Completed.Broadcast(StdOut, StdErr, ErrorCode, bResult);
+		Completed.Broadcast(CommandLine, StdOut, StdErr, ErrorCode, bResult);
 		SetReadyToDestroy();
 
 		AsyncExecuteAdbCommandTask->EnsureCompletion();
