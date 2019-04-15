@@ -32,3 +32,8 @@ Android開発で使うadbコマンドをUE4エディタから実行できるツ�
 1. コンテンツブラウザのView OptionsのShow Plugin Contentを有効に
 1. /AdbCommandEditorWidget/AdbCommandWidgetSample を開く
 
+## 作者
+[@pafuhana1213](https://twitter.com/pafuhana1213)
+
+## License
+[MIT](https://github.com/pafuhana1213/AdbCommandWidgetSample/blob/master/LICENSE)
