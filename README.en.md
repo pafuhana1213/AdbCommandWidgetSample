@@ -12,7 +12,7 @@ You can choose which command to use from the list of adb commands provided in ad
 Development was done at UE 4.2 2.0.  
 In addition, since I have only tested in the environment at hand, I do NOT guarantee the operation. In addition, function requests are NOT accepted. I hope you understand.
 
-# 用意しているコマンド
+# Command list
 - Get list of connected devices (adb devices)
 - Run Console Command (adb shell "am broadcast -a android.intent.action.RUN -e cmd　'XXXX')
 - Get Saved folder (adb pull /mnt/sdcard/UE4Game/XXX/XXX/Saved D:/XXX/XXX/Adb/XXX)
@@ -26,13 +26,13 @@ In addition, since I have only tested in the environment at hand, I do NOT guara
 - free writing for adb command (adb)
 - free writing for shell command (adb shell)
  
-# 使用方法
-1. Plugins/AdbCommandEditorWidget を プロジェクトの Pluginsフォルダに移動
-1. エディタのPluginsからAdbCommandEditorWidgetを有効に
-1. コンテンツブラウザのView OptionsのShow Plugin Contentを有効に
-1. /AdbCommandEditorWidget/AdbCommandWidgetSample を開く
+# How to use
+1. Move Plugins/AdbCommandEditorWidget to Plugins of your projects
+1. Enable AdbCommandEditorWidget from Editors
+1. Enable Show Plugin Content in Content Browser View Options
+1. Open /AdbCommandEditorWidget/AdbCommandWidgetSample
 
-## 作者
+## Author
 [@pafuhana1213](https://twitter.com/pafuhana1213)
 
 ## License
