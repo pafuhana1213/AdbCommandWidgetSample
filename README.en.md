@@ -7,7 +7,11 @@ Sample EditorUtilityWidget plug-in to execute adb command from the editor
 # Overview
 It is a tool that can execute the adb command used in Android development from the UE4 editor.Since it was troublesome to open tools other than UE4 (command prompt etc.) just to use the adb command, I created it for myself using the Editor Utility Widget function input from UE4.22.
 
-You can choose which command to use from the list of adb commands provided in advance. Then you can select the target terminal to execute the command or send command to all connected devices. You can also check the execution result of the command from the bottom of the tool. And, because it is implemented in the Editor Utility Widget, it can be (almost) customized by BP alone.
+- You can choose which command to use from the list of adb commands provided in advance. 
+- You can select the target terminal to execute the command or send command to all connected devices
+- You can also check the execution result of the command from the bottom of the tool
+- Because command execution is asynchronous, there is no need to wait for the command to complete
+- it is implemented in the Editor Utility Widget, So you can (almost) customize by BP alone.
 
 Development was done at UE 4.2 2.0.  
 In addition, since I have only tested in the environment at hand, I do NOT guarantee the operation. In addition, function requests are NOT accepted. I hope you understand.
