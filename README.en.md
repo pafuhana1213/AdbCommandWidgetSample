@@ -11,7 +11,7 @@ It is a tool that can execute the adb command used in Android development from t
 - You can select the target terminal to execute the command or send command to all connected devices
 - You can also check the execution result of the command from the bottom of the tool
 - Because command execution is asynchronous, there is no need to wait for the command to complete
-- it is implemented in the Editor Utility Widget, So you can (almost) customize by BP alone.
+- It is implemented in the Editor Utility Widget, So you can (almost) customize by BP alone
 
 Development was done at UE 4.2 2.0.  
 In addition, since I have only tested in the environment at hand, I do NOT guarantee the operation. In addition, function requests are NOT accepted. I hope you understand.
