@@ -12,9 +12,17 @@ Android開発で使うadbコマンドをUE4エディタから実行できるツ�
 開発はUE4.22.0で行いました。  
 なお、手元の環境でしかテストをしていないため、動作保証はしていません。また、機能要望は受け付けていません。ご理解いただけますと幸いです。
 
-# 用意されているコマンド
+# 用意しているコマンド
 - 接続中のデバイスのリスト取得 (adb devices)
 - 実機にConsole Commandを送信 (adb shell "am broadcast -a android.intent.action.RUN -e cmd　'XXXX')
 - 実機からSavedフォルダを取得 (adb pull /mnt/sdcard/UE4Game/XXX/XXX/Saved D:/XXX/XXX/Adb/XXX)
-- 
+- UE4CommandLine.txtを実機に送信 (adb push D:/XXX/XXX/Adb/UE4CommandLine.txt /mnt/sdcard/UE4Game/XXX/UE4CommandLine.txt)
+- アプリ起動 (adb shell am start -n com.XXX.XXX/com.epicgames.ue4.SplashActivity  )
+- パッケージインストール (adb install -r )
+- パッケージアンインストール (adb uninstall com.XXX.XXX )
+- Wifi接続準備 (adb tcpip 5555)
+- Wifi接続開始 (adb connect)
+- Wifi接続終了 (adb disconnect)
+- adbコマンド 自由記述 (adb)
+- shellコマンド 自由記述 (adb shell)
  
