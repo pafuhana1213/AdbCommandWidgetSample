@@ -13,18 +13,18 @@ Development was done at UE 4.2 2.0.
 In addition, since I have only tested in the environment at hand, I do NOT guarantee the operation. In addition, function requests are NOT accepted. I hope you understand.
 
 # 用意しているコマンド
-- 接続中のデバイスのリスト取得 (adb devices)
-- 実機にConsole Commandを送信 (adb shell "am broadcast -a android.intent.action.RUN -e cmd　'XXXX')
-- 実機からSavedフォルダを取得 (adb pull /mnt/sdcard/UE4Game/XXX/XXX/Saved D:/XXX/XXX/Adb/XXX)
-- UE4CommandLine.txtを実機に送信 (adb push D:/XXX/XXX/Adb/UE4CommandLine.txt /mnt/sdcard/UE4Game/XXX/UE4CommandLine.txt)
-- アプリ起動 (adb shell am start -n com.XXX.XXX/com.epicgames.ue4.SplashActivity  )
-- パッケージインストール (adb install -r )
-- パッケージアンインストール (adb uninstall com.XXX.XXX )
-- Wifi接続準備 (adb tcpip 5555)
-- Wifi接続開始 (adb connect)
-- Wifi接続終了 (adb disconnect)
-- adbコマンド 自由記述 (adb)
-- shellコマンド 自由記述 (adb shell)
+- Get list of connected devices (adb devices)
+- Run Console Command (adb shell "am broadcast -a android.intent.action.RUN -e cmd　'XXXX')
+- Get Saved folder (adb pull /mnt/sdcard/UE4Game/XXX/XXX/Saved D:/XXX/XXX/Adb/XXX)
+- Send UE4CommandLine.txt (adb push D:/XXX/XXX/Adb/UE4CommandLine.txt /mnt/sdcard/UE4Game/XXX/UE4CommandLine.txt)
+- Start package (adb shell am start -n com.XXX.XXX/com.epicgames.ue4.SplashActivity  )
+- Install package (adb install -r )
+- Uninstall package (adb uninstall com.XXX.XXX )
+- Setup to connect (adb tcpip 5555)
+- Connect using Wifi (adb connect)
+- Disconnect (adb disconnect)
+- free writing for adb command (adb)
+- free writing for shell command (adb shell)
  
 # 使用方法
 1. Plugins/AdbCommandEditorWidget を プロジェクトの Pluginsフォルダに移動
