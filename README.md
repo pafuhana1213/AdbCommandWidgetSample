@@ -26,3 +26,9 @@ Android開発で使うadbコマンドをUE4エディタから実行できるツ�
 - adbコマンド 自由記述 (adb)
 - shellコマンド 自由記述 (adb shell)
  
+# 使用方法
+1. Plugins/AdbCommandEditorWidget を プロジェクトの Pluginsフォルダに移動
+1. エディタのPluginsからAdbCommandEditorWidgetを有効に
+1. コンテンツブラウザのView OptionsのShow Plugin Contentを有効に
+1. /AdbCommandEditorWidget/AdbCommandWidgetSample を開く
+
