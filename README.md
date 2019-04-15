@@ -2,7 +2,7 @@
 adbコマンドをエディタ上から実行するEditorUtilityWidgetのプラグイン・サンプル  
 ![0](https://raw.githubusercontent.com/pafuhana1213/Screenshot/master/AdbCommandSample0.png)
 
-English
+[English](https://github.com/pafuhana1213/AdbCommandWidgetSample/blob/master/README.en.md)
 
 # 概要
 Android開発で使うadbコマンドをUE4エディタから実行できるツールです。adbコマンドを使うためだけにUE4以外のツール（コマンドプロンプトなど）を開くことが面倒だったので、UE4.22から入ったEditor Utility Widget機能を使って自分用に作成しました。
