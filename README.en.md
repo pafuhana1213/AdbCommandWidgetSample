@@ -14,7 +14,7 @@ It is a tool that can execute the adb command used in Android development from t
 - It is implemented in the Editor Utility Widget, So you can (almost) customize by BP alone
 
 Development was done at UE 4.2 2.0.  
-In addition, since I have only tested in the environment at hand, I do NOT guarantee the operation. In addition, function requests are NOT accepted. I hope you understand.
+In addition, since I have only tested in my own devices, I do NOT guarantee the operation. In addition, function requests are NOT accepted. I hope you understand.
 
 # Command list
 - Get list of connected devices (adb devices)
